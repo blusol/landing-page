@@ -26,3 +26,8 @@ jobs:
     - name: Copy files to the production website with the AWS CLI
       run: |
         aws s3 sync --exclude "*" --include "index.html" --include "error.html" --include "assets/*" . s3://blusol-landing-page
+
+        # Invalidate Cloudfront
+    - name: Cloudfront Invalidation
+      run: |
+        aws cloudfront create-invalidation --distribution-id ${{ secrets.SECRETS_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
