@@ -4,23 +4,86 @@
       <title>5º Café com Software Livre - 2023</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-         rel="stylesheet"
-         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-         crossorigin="anonymous"
-         />
-      <style>
-         body {
-         background-image: url('./assets/img/bg.png');
-         background-repeat: repeat;
-         }
-      </style>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+     <style>
+	body {
+		font-family: "Arial Rounded MT";
+      margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    background-image:url('assets/img/bg.png');
+	}
+
+	.palestrantes-row {
+		padding-top:40px;
+      margin-bottom:-45px;
+
+	}
+
+   .programacao {
+      background: transparent;
+      background-color: #ffffff;
+      padding-top: 50px;
+   }
+	.rounded {
+		box-shadow: 4px 1px 42px -9px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 4px 1px 42px -9px rgba(0,0,0,0.75);
+		-moz-box-shadow: 4px 1px 42px -9px rgba(0,0,0,0.75);
+	}
+	.palestrantes_name {
+		color:#FFF;
+		font-size:17pt;
+		text-shadow: -1px 2px 7px rgba(0,0,0,0.6);
+	}
+	h4 { color:#ebebe9;}
+	.titulo_branco { color: #f17e43;}
+	h1 { color: #2287ce;font-size:59,83pt;}
+	.titulo { margin-bottom: 50px; }
+	.descricao_agenda {text-align: left; vertical-align: middle;!important}
+	.horario_agenda {
+		min-width:140px;
+		text-align: center; 
+		vertical-align: middle;!important}
+	.palestrante_agenda {min-width:200px;text-align: center; vertical-align: middle;!important}
+	tr {
+		
+		margin-bottom:10px !important;
+	}
+   footer {
+      background: transparent;
+   }
+   .home {
+      margin-top:140px;
+      margin-left:50px;
+      margin-right:50px;
+      min-width: 100px;
+   }
+   .home_texto {
+      vertical-align: middle;
+   }
+   .palestrante { 
+      vertical-align: middle;
+   }
+   .container-fluid {
+      margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+   }
+   .patrocinio { background-color: #ffffff; padding: 30px;}
+   .descricao { color:#ebebe9;}
+     </style> 
    </head>
    <body>
       <!-- Responsive navbar-->
-      <nav class="navbar navbar-light navbar-expand-lg" style="background-color: #f8f8f8;border-color: #e7e7e7;";>
-         <div class="container">
+      <nav class="navbar navbar-light fixed-top navbar-expand-lg" style="background-color: #f8f8f8;border-color: #e7e7e7;";>
+         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="./assets/img/logo-menor.png">5º Café com Software Livre</a>
             <button
                class="navbar-toggler"
@@ -59,195 +122,197 @@
          </div>
       </nav>
       <!-- Page content-->
-      <div class="container">
-         <div class="">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <img src="./assets/img/carousel/imagem-1.jpg" class="img-fluid w-100" alt="1">
-                  </div>
-                  <div class="carousel-item">
-                     <img src="./assets/img/carousel/imagem-2.jpg" class="d-block w-100" alt="2">
-                  </div>
-                  <div class="carousel-item">
-                     <img src="./assets/img/carousel/imagem-3.jpg" class="d-block w-100" alt="3">
-                  </div>
-                  <div class="carousel-item">
-                     <img src="./assets/img/carousel/imagem-4.jpg" class="d-block w-100" alt="3">
-                  </div>
-                  <div class="carousel-item">
-                     <img src="./assets/img/carousel/imagem-5.jpg" class="d-block w-100" alt="3">
+      <div class="container-fluid">
+         <div class="row home">         
+            <div class="col">
+               <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner rounded">
+                     <div class="carousel-item active">
+                        <img src="./assets/img/carousel/imagem-1.jpg" class="img-fluid w-100 rounded" alt="1">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="./assets/img/carousel/imagem-2.jpg" class="d-block w-100 rounded" alt="2">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="./assets/img/carousel/imagem-3.jpg" class="d-block w-100 rounded" alt="3">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="./assets/img/carousel/imagem-4.jpg" class="d-block w-100 rounded" alt="3">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="./assets/img/carousel/imagem-5.jpg" class="d-block w-100 rounded" alt="3">
+                     </div>
                   </div>
                </div>
             </div>
+            <div class="text-center col" id="sobre">
+               <img src="assets/img/logo.png" class="img img-fluid" style="max-width: 60%;" />
+               <div class="card" style="width: 40rem;max-width:100%; margin:0 auto;margin-top:10px;">
+                     <div class="card-body">
+                        <p> A Comunidade Blumenauense de Software Livre tem como objetivo fomentar a cultura do SL na região. Busca colocar a cidade no roteiro de Software Livre nacional, através de reuniões, palestras e eventos, assim proporcionando a comunhão de todos os apaixonados por SL em geral.</p>
+                        <p>Neste intuito, é organizando o evento Café com Software Livre que espera proporcionar um espaço de discussão sobre Software Livre em Blumenau e região. </p>
+                     </div>
+               </div>
+            </div>
          </div>
-         <div class="text-center mt-5" id="sobre">
-            <h1>V Café com Software Livre</h1>
-            <h2> 09/11/2023 (Virtual) e 11/11/2023 no Senai em Blumenau/SC</h2>
-            <p class="lead"> A Comunidade Blumenauense de Software Livre tem como objetivo fomentar a cultura do SL na região. Busca colocar a cidade no roteiro de Software Livre nacional, através de reuniões, palestras e eventos, assim proporcionando a comunhão de todos os apaixonados por SL em geral.</p>
-            <p class="lead">Neste intuito, é organizando o evento Café com Software Livre que espera proporcionar um espaço de discussão sobre Software Livre em Blumenau e região. </p>
-            </p>
-         </div>
-         <hr class="featurette-divider">
-         <div class="text-center mt-5" id="programacao">
-            <h1>Programação - 09/11/2023 - Esquenta online</h1>
-            <p><small class="text-muted">A programação poderá sofrer alterações.</small></p>
-            <table class="table">
-               <thead>
-                  <tr>
-                     <th scope="col">Horário</th>
-                     <th scope="col">Título</th>
-                     <th scope="col">Palestrante</th>
-                     <th scope="col">Download Slides</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <th scope="row">19:00 - 19:45</th>
-                     <td>Lorem Ipsum</td>
-                     <td>Linus Torvalds</td>
-                     <td><i>Em Breve</i></td>
-                  </tr>
-                  <tr>
-                     <th scope="row">20:00 - 20:45</th>
-                     <td>Lorem Ipsum</td>
-                     <td>Linus Torvalds</td>
-                     <td><i>Em Breve</i></td>
-                  </tr>
-               </tbody>
-            </table>
-            <h1>Programação - 11/11/2023 - Evento Presencial</h1>
-            <p><small class="text-muted">A programação poderá sofrer alterações.</small></p>
-            <table class="table">
-               <thead>
-                  <tr>
-                     <th scope="col">Horário</th>
-                     <th scope="col">Título</th>
-                     <th scope="col">Palestrante</th>
-                     <th scope="col">Download Slides</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <th scope="row">08:00 - 08:45</th>
-                     <td>Lorem Ipsum</td>
-                     <td>Linus Torvalds</td>
-                     <td><i>Em Breve</i></td>
-                  </tr>
-                  <tr>
-                     <th scope="row">08:00 - 08:45</th>
-                     <td>Lorem Ipsum</td>
-                     <td>Linus Torvalds</td>
-                     <td><i>Em Breve</i></td>
-                  </tr>
-               </tbody>
-            </table>
-         </div>
-         <hr class="featurette-divider" id="palestrantes">
-         <div class="text-center mt-5">
-            <h2> Palestrantes </h2>
+
+<!-- INICIO PALESTRANTES -->
+
+	 <span  id="palestrantes"> </span>
+         <div class="text-center mt-5 palestrantes-row" style="background-image:url('assets/img/bg.png');">
+	    <div class="titulo">
+	    <h4> PALESTRANTES </h4>
+            <h1> CONFIRMADOS </h1>
+	    </div>
             <div class="row">
-               <div class="col-lg-4">
-                  <img src="./assets/img/palestrantes/ezyo-lamarca.png" class="bd-placeholder-img rounded-circle">
-                  <h2>Ezyo Lamarca</h2>
-                  <p>Forense Computacional com Software Livre</p>
-                  <p><a class="btn btn-secondary" href="#">Ver perfil »</a></p>
+               <div class="col-lg-4 ">
+                  <img src="./assets/img/palestrantes/ezyo-lamarca.png" class="bd-placeholder-img rounded">
+		  <p><span class="badge text-bg-danger"><small>#DEV</small></span><span class="palestrantes_name" >Ezyo Lamarca</p>
+               </div>
+               <div class="col-lg-4 ">
+                  <img src="./assets/img/palestrantes/ezyo-lamarca.png" class="bd-placeholder-img rounded">
+		  <p><span class="badge text-bg-danger"><small>#DEV</small></span><span class="palestrantes_name" >Ezyo Lamarca</p>
+               </div>
+               <div class="col-lg-4 ">
+                  <img src="./assets/img/palestrantes/ezyo-lamarca.png" class="bd-placeholder-img rounded">
+		  <p><span class="badge text-bg-danger"><small>#DEV</small></span><span class="palestrantes_name" >Ezyo Lamarca</p>
+               </div>
+               <div class="col-lg-4 ">
+                  <img src="./assets/img/palestrantes/ezyo-lamarca.png" class="bd-placeholder-img rounded">
+		  <p><span class="badge text-bg-danger"><small>#DEV</small></span><span class="palestrantes_name" >Ezyo Lamarca</p>
                </div>
                <!-- /.col-lg-4 -->
                <div class="col-lg-4">
-                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <svg class="bd-placeholder-img rounded" width="252" height="252" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                      <title>Placeholder</title>
                      <rect width="100%" height="100%" fill="#777"></rect>
                      <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
                   </svg>
-                  <h2>Júlio Neves</h2>
-                  <p>Bash Script</p>
-                  <p><a class="btn btn-secondary" href="#">Ver perfil »</a></p>
+		  <p><span class="badge text-bg-warning"><small>#INFRA</small></span><b><span class="palestrantes_name" > Júlio Neves</span></b></p>
                </div>
                <!-- /.col-lg-4 -->
                <div class="col-lg-4">
-                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <svg class="bd-placeholder-img rounded" width="252" height="252" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                      <title>Placeholder</title>
                      <rect width="100%" height="100%" fill="#777"></rect>
                      <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
                   </svg>
-                  <h2>Felipe Olivaes</h2>
-                  <p>Devsecops: Como o conhecimento em SEC/OPS pode melhorar o DEV</p>
-                  <p><a class="btn btn-secondary" href="#">Ver perfil »</a></p>
+               
+		  <p><span class="badge text-bg-danger"><small>#DEV</small></span><span class="palestrantes_name" >Felipe Olivaes</p>
                </div>
-               <!-- /.col-lg-4 -->
-               <div class="col-lg-4">
-                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#777"></rect>
-                     <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                  </svg>
-                  <h2>Eduardo Machado</h2>
-                  <p>Segurança de ambientes usando SCAP</p>
-                  <p><a class="btn btn-secondary" href="#">Ver perfil »</a></p>
-               </div>
-               <!-- /.col-lg-4 -->
-               <div class="col-lg-4">
-                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#777"></rect>
-                     <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                  </svg>
-                  <h2>Er Galvão Abbott </h2>
-                  <p>Git Branching: Equívocos, Erros e Soluções</p>
-                  <p><a class="btn btn-secondary" href="#">Ver perfil »</a></p>
-               </div>
-               <!-- /.col-lg-4 -->
-               <div class="col-lg-4">
-                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#777"></rect>
-                     <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                  </svg>
-                  <h2>Thiago Silva </h2>
-                  <p>Observabilidade com stack Grafana, Loki, Mimir, Tempo e Prometheus</p>
-                  <p><a class="btn btn-secondary" href="#">Ver perfil »</a></p>
-               </div>
-               <!-- /.col-lg-4 -->          
             </div>
-            <!-- /.row -->               
          </div>
-         <div class="text-center mt-5" id="patrocinadores">
-            <h2> Local </h2>
-            <p class="lead">
+<!-- FIM PALESTRANTES -->               
+
+<!-- INICIO AGENDA -->
+
+<div class="text-center mt-5 programacao" id="programacao">
+   <div class="titulo">
+    <h4 class="titulo_branco">Programação </h4>
+    <h1>Esquenta online</h1>
+         <p><small class="text-muted">A programação poderá sofrer alterações.</small></p>
+   </div>
+    <div class="container">
+      <div class="table-responsive" style="box-shadow: 0 30px 40px rgba(0,0,0,.1);">
+    <table class="table table-hover ">
+            <thead>
+               <tr>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th scope="row" class="horario_agenda">19:00 - 19:45</th>
+                  <td class="palestrante"><img src="./assets/img/palestrantes/ezyo-lamarca.png" class="bd-placeholder-img rounded-circle" style="max-width:100px;padding:5px;"></td>
+        <td class="palestrante_agenda">
+           <p>Linus Torvalds<br>
+           <small>Diretor INC SA<small>
+           </p>
+        </td>
+                  <td class="descricao_agenda">
+           <h5>Introduction WordPress</h5>
+           <p>n this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+        </td>
+               </tr>
+               <tr>
+                  <th scope="row" class="horario_agenda">19:00 - 19:45</th>
+                  <td class="palestrante"><img src="./assets/img/palestrantes/ezyo-lamarca.png" class="bd-placeholder-img rounded-circle" style="max-width:100px;padding:5px;"></td>
+        <td class="palestrante_agenda">
+           <p>Linus Torvalds<br>
+           <small>Diretor INC SA<small>
+           </p>
+        </td>
+                  <td class="descricao_agenda">
+           <h5>Introduction WordPress</h5>
+           <p>n this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+        </td>
+               </tr>
+
+            </tbody>
+         </table>
+      </div>
+         <div class="text-center mt-5" id="programacao">
+   <div class="titulo">
+    <h4 class="titulo_branco">Programação </h4>
+    <h1>Presencial</h1>
+         <p><small class="text-muted">A programação poderá sofrer alterações.</small></p>
+         </div>
+         <div class="table-responsive"style="box-shadow: 0 30px 40px rgba(0,0,0,.1);">
+         <table class="table table-hover table-responsive">
+            <thead>
+            </thead>
+            <tbody>             
+     <tr>
+                  <th scope="row" class="horario_agenda">19:00 - 19:45</th>
+                  <td class="palestrante"><img src="./assets/img/palestrantes/ezyo-lamarca.png" class="bd-placeholder-img rounded-circle" style="max-width:100px;padding:5px;"></td>
+        <td class="palestrante_agenda">
+           <p>Linus Torvalds<br>
+           <small>Diretor INC SA<small>
+           </p>
+        </td>
+                  <td class="descricao_agenda">
+           <h5>Introduction WordPress</h5>
+           <p>n this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+        </td>
+               </tr>
+       </tbody>
+         </table>
+         </div>
+    </div>
+      </div>
+
+<!-- FIM AGENDA -->
+
+<!-- INICIO LOCAL -->
+         <div class="text-center mt-5" id="patrocinadores" style="background-image:url('assets/img/bg.png'); padding-top:30px; padding-bottom: 30px;">
+            <h1> Local </h1>
+            <p class="descricao">
                O evento será realizado novamente no SENAI, em uma região central de Blumenau, próximo a universidade Furb e do centro da cidade</a>.
                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7116.07646931559!2d-49.091951804432924!3d-26.902281638832758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df1fe6626a9259%3A0x66d982fa313e6595!2sSENAI%20Blumenau!5e0!3m2!1spt-BR!2sbr!4v1693941995139!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          
-            <p>
-               Rua São Paulo, 1147
-            </p>
             </p>
          </div>
-         <div class="text-center mt-5" id="patrocinadores">
-            <h2> Patrocinadores </h2>
-            <p class="lead">
+
+<!-- FIM LOCAL-->
+         <div class="text-center mt-5 patrocinio" id="patrocinadores">
+            <h1 class="titulo_branco"> Patrocinadores </h1>
+            <p class="">
                Patrocine o Café com Software Livre, exponha a sua marca, estabeleça contatos e crie novas possibilidades de negócios para sua empresa.<br/>
                Para informações sobre captação, não hesite em nos contactar através do e-mail <a href="mailto:contato@blusol.org">contato@blusol.org</a>.
             </p>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-               <div class="feature col">
-                  <div class="">
-                     <img src="./assets/img/logo.png" class="img-responsive">
-                  </div>
+            <br>
+                  <img src="./assets/img/logo.png" class="img-fluid">
                   <h2>Sua marca aqui</h2>
                   <p>Coloque a sua marca aqui como apoiador do Software Livre<br/>Temos 3 opções de cotas! Faça o download do Media Kit e saiba mais</p>
-                  <a href="#" class="icon-link">
                      Media Kit
                      <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#chevron-right"></use>
                      </svg>
                   </a>
                </div>
-            </div>
          </div>
-         <footer class="pt-4 my-md-5 pt-md-5 border-top">
+         <footer class="pt-4 my-md-5 pt-md-5">
             <div class="row">
                <div class="col-12 col-md">
-                  <img class="mb-2" src="./assets/img/logo.png" alt="" width="24" height="19">
+                  <img class="img-fluid" src="./assets/img/logo.png" alt="" width="24" height="19">
                   Comunidade Blumenauense de Software Livre
                   <small class="d-block mb-3 text-muted">© 2023</small>
                </div>
