@@ -41,6 +41,33 @@
          -moz-box-shadow: 4px 1px 42px -9px rgba(0, 0, 0, 0.75);
       }
 
+
+      .palestrantes_img {
+         left: 0;
+         top: 0;
+         position: relative;
+         overflow: hidden;
+         margin-top: 50px;
+
+      }
+
+      .palestrantes_img img {
+         -webkit-transition: 0.6s ease;
+         transition: 0.6s ease;
+
+      }
+
+      .palestrantes_img img:hover {
+         -webkit-transform: scale(1.2);
+         transform: scale(1.2);
+
+      }
+
+      .img-thumbnail {
+         border: 0px;
+         border-radius: 0px;
+      }
+
       .palestrantes_name {
          color: #FFF;
          font-size: 17pt;
@@ -224,28 +251,32 @@
          </div>
          <div class="row">
             <div class="col-md-3">
-               <img src="./assets/img/palestrantes/ezyo-lamarca.png" class="bd-placeholder-img rounded" />
+               <div class="palestrantes_img"><img src="./assets/img/palestrantes/ezyo-lamarca.png"
+                     class="bd-placeholder-img rounded" /></div>
                <p>
                   <span class="badge text-bg-danger"><small>#DEV</small></span><span class="palestrantes_name">Ezyo
                      Lamarca</span>
                </p>
             </div>
             <div class="col-md-3">
-               <img src="./assets/img/palestrantes/felipe-olivaes.png" class="bd-placeholder-img rounded" />
+               <div class="palestrantes_img"><img src="./assets/img/palestrantes/felipe-olivaes.png"
+                     class="bd-placeholder-img rounded" /></div>
                <p>
                   <span class="badge text-bg-primary"><small>#DEVOPS</small></span><span
                      class="palestrantes_name">Felipe Olivaes</span>
                </p>
             </div>
             <div class="col-md-3">
-               <img src="./assets/img/palestrantes/eduardo-machado.png" class="bd-placeholder-img rounded" />
+               <div class="palestrantes_img"><img src="./assets/img/palestrantes/eduardo-machado.png"
+                     class="bd-placeholder-img rounded" /></div>
                <p>
                   <span class="badge text-bg-warning"><small>#INFRA</small></span><span
                      class="palestrantes_name">Eduardo Machado</span>
                </p>
             </div>
             <div class="col-md-3">
-               <img src="./assets/img/palestrantes/galvao_abbott.png" class="bd-placeholder-img rounded" />
+               <div class="palestrantes_img"><img src="./assets/img/palestrantes/galvao_abbott.png"
+                     class="bd-placeholder-img rounded" /></div>
                <p>
                   <span class="badge text-bg-danger"><small>#DEV</small></span><span class="palestrantes_name">Er Galvão
                      Abbott</span>
@@ -253,7 +284,8 @@
             </div>
 
             <div class="col-md-3">
-               <img src="./assets/img/palestrantes/julio-cezar-neves.png" class="bd-placeholder-img rounded" />
+               <div class="palestrantes_img"><img src="./assets/img/palestrantes/julio-cezar-neves.png"
+                     class="bd-placeholder-img rounded" /></div>
 
                <p>
                   <span class="badge text-bg-warning"><small>#INFRA</small></span><b><span class="palestrantes_name">
@@ -262,7 +294,8 @@
             </div>
 
             <div class="col-md-3">
-               <img src="./assets/img/palestrantes/thiago_silva.png" class="bd-placeholder-img rounded" />
+               <div class="palestrantes_img"><img src="./assets/img/palestrantes/thiago_silva.png"
+                     class="bd-placeholder-img rounded" /></div>
 
                <p>
                   <span class="badge text-bg-warning"><small>#INFRA</small></span><span class="palestrantes_name">Thiago
@@ -271,7 +304,8 @@
             </div>
 
             <div class="col-md-3">
-               <img src="./assets/img/palestrantes/fernando-massanori.png" class="bd-placeholder-img rounded" />
+               <div class="palestrantes_img"><img src="./assets/img/palestrantes/fernando-massanori.png"
+                     class="bd-placeholder-img rounded" /></div>
 
                <p>
                   <span class="badge text-bg-danger"><small>#DEV</small></span><span class="palestrantes_name">Fernando
@@ -547,15 +581,15 @@
 
       </div>
 
-   <footer class="pt-4 my-md-5 pt-md-5">
-      <div class="row">
-         <div class="col-12 col-md">
-            <img class="img-fluid" src="./assets/img/logo.png" alt="" width="24" height="19" />
-            Comunidade Blumenauense de Software Livre
-            <small class="d-block mb-3 text-muted">© 2023</small>
+      <footer class="pt-4 my-md-5 pt-md-5">
+         <div class="row">
+            <div class="col-12 col-md">
+               <img class="img-fluid" src="./assets/img/logo.png" alt="" width="24" height="19" />
+               Comunidade Blumenauense de Software Livre
+               <small class="d-block mb-3 text-muted">© 2023</small>
+            </div>
          </div>
-      </div>
-   </footer>
+      </footer>
    </div>
    </div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
